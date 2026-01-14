@@ -23,24 +23,30 @@ Choose your operating system:
 - Type `cmd`
 - Press Enter
 
-### 3. Install
+### 3. Create Project Folder
 Copy and paste these commands one at a time:
 
 ```cmd
 cd Desktop
 mkdir imts-scraper
 cd imts-scraper
-python -m venv venv
-venv\Scripts\activate
-pip install playwright
-playwright install chromium
 ```
 
 ### 4. Add Files
 - Copy `scrape.py` into the `imts-scraper` folder on your Desktop
 - Copy `requirements.txt` into the same folder
 
-### 5. Run
+### 5. Install Dependencies
+Copy and paste these commands one at a time:
+
+```cmd
+python -m venv venv
+venv\Scripts\activate
+pip install -r requirements.txt
+playwright install chromium
+```
+
+### 6. Run
 ```cmd
 python scrape.py
 ```
@@ -62,24 +68,30 @@ Python 3 usually comes pre-installed on macOS. To verify:
 - Type `Terminal`
 - Press Enter
 
-### 3. Install
+### 3. Create Project Folder
 Copy and paste these commands one at a time:
 
 ```bash
 cd ~/Desktop
 mkdir imts-scraper
 cd imts-scraper
-python3 -m venv venv
-source venv/bin/activate
-pip install playwright
-playwright install chromium
 ```
 
 ### 4. Add Files
 - Copy `scrape.py` into the `imts-scraper` folder on your Desktop
 - Copy `requirements.txt` into the same folder
 
-### 5. Run
+### 5. Install Dependencies
+Copy and paste these commands one at a time:
+
+```bash
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+playwright install chromium
+```
+
+### 6. Run
 ```bash
 python3 scrape.py
 ```
